@@ -10,6 +10,11 @@
       "StackName": "amplify-tryawsbpb-dev-202802",
       "StackId": "arn:aws:cloudformation:us-east-1:206441467228:stack/amplify-tryawsbpb-dev-202802/a3324ba0-103b-11ec-b8cb-12417e4a260f",
       "AmplifyAppId": "d3e1fe1caetl3l"
+    },
+    "categories": {
+      "auth": {
+        "tryawsbpb52a04cc4": {}
+      }
     }
   }
 }
