@@ -1,6 +1,6 @@
 {
   "auth": {
-    "tryawsbpb52a04cc4": {
+    "tryawsbpbf94ba979": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -21,6 +21,21 @@
           "SMS"
         ]
       }
+    },
+    "userPoolGroups": {
+      "service": "Cognito-UserPool-Groups",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "tryawsbpbf94ba979",
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID"
+          ]
+        }
+      ]
     }
   }
 }
